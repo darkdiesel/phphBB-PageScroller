@@ -1,0 +1,18 @@
+<!-- INCLUDEJS @dark_diesel_page_scroller/assets/scripts/page-scroller.js -->
+
+<div class="page-scroller btn-group-vertical" role="group" aria-label="">
+	<button type="button" class="page-scroller-up-btn page-scroller-btn">.</button>
+	<button type="button" class="page-scroller-down-btn page-scroller-btn">.</button>
+</div>
+
+<script>
+	(function ($) {
+		$(document).ready(function () {
+			if (jQuery.fn.pageScroller) {
+				$('.page-scroller').pageScroller({
+					'position': 'right-bottom'
+				});
+			}
+		});
+	})(jQuery);
+</script>

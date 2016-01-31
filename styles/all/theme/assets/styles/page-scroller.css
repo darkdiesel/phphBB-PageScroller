@@ -1,0 +1,70 @@
+.btn-group > .page-scroller-btn,
+.btn-group-vertical > .page-scroller-btn {
+    position: relative;
+}
+
+.btn-group-vertical > .page-scroller-btn,
+.btn-group-vertical > .btn-group,
+.btn-group-vertical > .btn-group > .page-scroller-btn {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+.btn-group,
+.btn-group-vertical {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.page-scroller {
+    opacity: 0.65;
+}
+
+.page-scroller .page-scroller-btn {
+    border: 2px solid #a0d814;
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding: 0;
+
+    width: 44px;
+    height: 35px;
+
+    background: url("../images/sprite-buttons.png");
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+    text-indent: -1000px;
+}
+
+.page-scroller .page-scroller-btn:focus, .page-scroller .page-scroller-btn:hover {
+    text-decoration: none;
+}
+
+.page-scroller:hover {
+    opacity: 1;
+}
+
+.page-scroller:hover .page-scroller-btn {
+    opacity: 0.7;
+}
+
+.page-scroller .page-scroller-btn:hover {
+    opacity: 1;
+}
+
+.page-scroller .page-scroller-btn.page-scroller-up-btn {
+    background-position: center 0;
+}
+
+.page-scroller .page-scroller-btn.page-scroller-down-btn {
+    margin-top: 3px;
+    background-position: center -36px;
+}
