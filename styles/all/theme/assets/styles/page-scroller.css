@@ -71,48 +71,113 @@
 }
 
 /* page scroller position classes */
-.page-scroller.right-top {
-    top: 50px;
-    right: 25px;
-}
-
+.page-scroller.right-top,
 .page-scroller.left-top {
     top: 50px;
-    left: 25px;
 }
 
-.page-scroller.right-middle {
-    top: 50%;
-    right: 25px;
-    margin-top: -37px;
-}
-
+.page-scroller.right-middle,
 .page-scroller.left-middle {
     top: 50%;
-    left: 25px;
     margin-top: -37px;
 }
 
+.page-scroller.right-bottom,
+.page-scroller.left-bottom {
+    bottom: 25px;
+}
+
+.page-scroller.right-top,
+.page-scroller.right-middle,
 .page-scroller.right-bottom {
-    bottom: 50px;
     right: 25px;
 }
 
+.page-scroller.left-top,
+.page-scroller.left-middle,
 .page-scroller.left-bottom {
-    bottom: 50px;
     left: 25px;
 }
 
 .page-scroller.left-top.animation-hideout,
 .page-scroller.left-middle.animation-hideout,
-.page-scroller.left-bottom.animation-hideout
-{
+.page-scroller.left-bottom.animation-hideout {
     left: 0;
 }
 
 .page-scroller.right-top.animation-hideout,
 .page-scroller.right-middle.animation-hideout,
-.page-scroller.right-bottom.animation-hideout
-{
+.page-scroller.right-bottom.animation-hideout {
     right: 0;
+}
+
+/* mobile styles */
+/* xs */
+@media (max-width: 766px) {
+    .page-scroller.right-top,
+    .page-scroller.left-top {
+        top: 5px;
+    }
+
+    .page-scroller.right-middle,
+    .page-scroller.left-middle {
+
+    }
+
+    .page-scroller.right-bottom,
+    .page-scroller.left-bottom {
+        bottom:5px;
+    }
+
+    .page-scroller.right-top,
+    .page-scroller.right-middle,
+    .page-scroller.right-bottom {
+        right: 5px;
+    }
+
+    .page-scroller.left-top,
+    .page-scroller.left-middle,
+    .page-scroller.left-bottom {
+        left: 5px;
+    }
+}
+
+/* sm */
+@media (min-width: 767px) and (max-width: 991px) {
+    .page-scroller.right-top,
+    .page-scroller.left-top {
+        top: 10px;
+    }
+
+    .page-scroller.right-middle,
+    .page-scroller.left-middle {
+
+    }
+
+    .page-scroller.right-bottom,
+    .page-scroller.left-bottom {
+        bottom: 10px;
+    }
+
+    .page-scroller.right-top,
+    .page-scroller.right-middle,
+    .page-scroller.right-bottom {
+        right: 10px;
+    }
+
+    .page-scroller.left-top,
+    .page-scroller.left-middle,
+    .page-scroller.left-bottom {
+        left: 10px;
+    }
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* lg */
+@media (min-width: 1200px) {
+
 }
