@@ -24,6 +24,7 @@
 
 .page-scroller .page-scroller-btn {
     border: 2px solid #a0d814;
+    box-sizing: border-box;
     cursor: pointer;
     display: block;
     font-size: 1rem;
@@ -65,6 +66,39 @@
 }
 
 .page-scroller .page-scroller-btn.page-scroller-down-btn {
-    margin-top: 3px;
+    margin-top: 4px;
     background-position: center -36px;
+}
+
+/* page scroller position classes */
+.page-scroller.right-top {
+    top: 50px;
+    right: 25px;
+}
+
+.page-scroller.left-top {
+    top: 50px;
+    left: 25px;
+}
+
+.page-scroller.right-middle {
+    top: 50%;
+    right: 25px;
+    margin-top: -37px;
+}
+
+.page-scroller.left-middle {
+    top: 50%;
+    left: 25px;
+    margin-top: -37px;
+}
+
+.page-scroller.right-bottom {
+    bottom: 50px;
+    right: 25px;
+}
+
+.page-scroller.left-bottom {
+    bottom: 50px;
+    left: 25px;
 }
