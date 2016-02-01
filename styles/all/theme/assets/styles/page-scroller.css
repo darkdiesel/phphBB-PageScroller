@@ -102,3 +102,17 @@
     bottom: 50px;
     left: 25px;
 }
+
+.page-scroller.left-top.animation-hideout,
+.page-scroller.left-middle.animation-hideout,
+.page-scroller.left-bottom.animation-hideout
+{
+    left: 0;
+}
+
+.page-scroller.right-top.animation-hideout,
+.page-scroller.right-middle.animation-hideout,
+.page-scroller.right-bottom.animation-hideout
+{
+    right: 0;
+}
