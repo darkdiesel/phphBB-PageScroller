@@ -12,7 +12,7 @@
  */
 
 
-namespace dark_diesel\page_scroller;
+namespace darkdiesel\pagescroller;
 
 /**
 * Extension class for custom enable/disable/purge actions
