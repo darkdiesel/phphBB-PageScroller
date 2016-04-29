@@ -73,7 +73,7 @@
 /* page scroller position classes */
 .page-scroller.right-top,
 .page-scroller.left-top {
-    top: 50px;
+    top: 20px;
 }
 
 .page-scroller.right-middle,
@@ -84,19 +84,19 @@
 
 .page-scroller.right-bottom,
 .page-scroller.left-bottom {
-    bottom: 25px;
+    bottom: 20px;
 }
 
 .page-scroller.right-top,
 .page-scroller.right-middle,
 .page-scroller.right-bottom {
-    right: 25px;
+    right: 20px;
 }
 
 .page-scroller.left-top,
 .page-scroller.left-middle,
 .page-scroller.left-bottom {
-    left: 25px;
+    left: 20px;
 }
 
 .page-scroller.left-top.animation-hideout,
