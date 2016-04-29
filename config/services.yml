@@ -1,0 +1,12 @@
+services:
+    darkdiesel.pagescroller.listener:
+        class: darkdiesel\pagescroller\event\main_listener
+        arguments:
+            - @config
+            - @controller.helper
+            - @template
+            - @user
+            - %core.php_ext%
+        tags:
+            - { name: event.listener }
+

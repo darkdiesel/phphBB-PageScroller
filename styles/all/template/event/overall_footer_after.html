@@ -8,9 +8,21 @@
 <script>
 	(function ($) {
 		$(document).ready(function () {
+
+			var hor_pos = '{DARKDIESEL_PAGESCROLLER_HORIZONTAL_POS}';
+			var ver_pos = '{DARKDIESEL_PAGESCROLLER_VERTICAL_POS}';
+
+			if (!hor_pos.length){
+				hor_pos = 'right';
+			}
+
+			if (!ver_pos.length){
+				hor_pos = 'bottom';
+			}
+
 			if (jQuery.fn.pageScroller) {
 				$('.page-scroller').pageScroller({
-					'position': 'right-bottom'
+					'position': hor_pos + '-' + ver_pos
 				});
 			}
 		});

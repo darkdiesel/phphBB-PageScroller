@@ -1,15 +1,13 @@
 <?php
 /**
  *
- * This file is written by Igor Peshkov.
- *
  * @package phpBB Extension - Page Scroller
  * @copyright (c) Igor Peshkov (dark_diesel) <https://plus.google.com/+IgorPeshkov>
- * @license GNU General Public License, version 2 (GPL-2.0)
+ * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
  *
  * For full copyright and license information, contact with developer
- *
  */
+
 
 
 namespace darkdiesel\pagescroller;

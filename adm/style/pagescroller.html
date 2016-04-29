@@ -1,0 +1,34 @@
+<!-- INCLUDE overall_header.html -->
+
+<h1>{L_ACP_PAGESCROLLER_SETTINGS}</h1>
+
+<form id="acp_board" method="post" action="{U_ACTION}">
+
+    <fieldset>
+        <legend>{L_ACP_PAGESCROLLER_POSITION_SETTINGS}</legend>
+        <dl>
+            <dt><label for="darkdiesel_pagescroller_horizontal_pos">{L_ACP_PAGESCROLLER_HORIZONTAL_POS}</label></dt>
+            <dd>
+                <input type="radio" class="radio" name="darkdiesel_pagescroller_horizontal_pos" value="left" <!-- IF DARKDIESEL_PAGESCROLLER_HORIZONTAL_POS == 'left' -->checked="checked"<!-- ENDIF -->/> {L_ACP_PAGESCROLLER_HORIZONTAL_POS_LEFT} &nbsp;
+                <input type="radio" class="radio" name="darkdiesel_pagescroller_horizontal_pos" value="right" <!-- IF DARKDIESEL_PAGESCROLLER_HORIZONTAL_POS == 'right' -->checked="checked"<!-- ENDIF --> /> {L_ACP_PAGESCROLLER_HORIZONTAL_POS_RIGHT}
+            </dd>
+        </dl>
+        <dl>
+            <dt><label for="darkdiesel_pagescroller_vertical_pos">{L_ACP_PAGESCROLLER_VERTICAL_POS}</label></dt>
+            <dd>
+                <input type="radio" class="radio" name="darkdiesel_pagescroller_vertical_pos" value="top" <!-- IF DARKDIESEL_PAGESCROLLER_VERTICAL_POS == 'top' -->checked="checked"<!-- ENDIF -->/> {L_ACP_PAGESCROLLER_VERTICAL_POS_TOP} &nbsp;
+                <input type="radio" class="radio" name="darkdiesel_pagescroller_vertical_pos" value="middle" <!-- IF DARKDIESEL_PAGESCROLLER_VERTICAL_POS == 'middle' -->checked="checked"<!-- ENDIF -->/> {L_ACP_PAGESCROLLER_VERTICAL_POS_MIDDLE} &nbsp;
+                <input type="radio" class="radio" name="darkdiesel_pagescroller_vertical_pos" value="bottom" <!-- IF DARKDIESEL_PAGESCROLLER_VERTICAL_POS == 'bottom' -->checked="checked"<!-- ENDIF --> /> {L_ACP_PAGESCROLLER_VERTICAL_POS_BOTTOM}
+            </dd>
+        </dl>
+    </fieldset>
+
+    <p class="submit-buttons">
+        <input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}"/>&nbsp;
+        <input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}"/>
+    </p>
+
+    {S_FORM_TOKEN}
+</form>
+
+<!-- INCLUDE overall_footer.html -->
