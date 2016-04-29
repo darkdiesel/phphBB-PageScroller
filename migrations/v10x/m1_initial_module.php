@@ -33,7 +33,7 @@ class m1_initial_module extends \phpbb\db\migration\migration {
    */
   public function update_data() {
     return array(
-      array('config.add', array('darkdiesel_pagescroller_horisontal_pos', 'right')),
+      array('config.add', array('darkdiesel_pagescroller_horizontal_pos', 'right')),
       array('config.add', array('darkdiesel_pagescroller_vertical_pos', 'bottom')),
       // Remove old ACP_PAGESCROLLER module if it exists
 //      array('if', array(
