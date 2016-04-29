@@ -7,8 +7,9 @@ Page scroller extension add ability to scroll page to the top of page or to the 
 ## Installation
 
  * Clone into phpBB folder /ext/darkdiesel/pagescroller:
-
+    ```
     git clone git@github.com:darkdiesel/phphBB-PageScroller.git phpBB folder /ext/darkdiesel/pagescroller
+    ```
 
  * Navigate to "ACP" > "Customise" > "Extensions" and enable the "Page Scroller" extension.
 
