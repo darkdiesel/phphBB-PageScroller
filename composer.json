@@ -21,7 +21,7 @@
 	"extra": {
 		"display-name": "Page Scroller",
 		"soft-require": {
-			"phpbb/phpbb": ">=3.1.2,<3.2.*@dev"
+			"phpbb/phpbb": ">=3.1.2,<3.2.0@dev"
 		},
 		"version-check": {
 			"host": "www.phpbb.com",
