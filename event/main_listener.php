@@ -69,7 +69,16 @@ class main_listener implements EventSubscriberInterface {
   public function setup_page_scroller(){
     $this->template->assign_vars(array(
       'DARKDIESEL_PAGESCROLLER_HORIZONTAL_POS' => $this->config['darkdiesel_pagescroller_horizontal_pos'],
-      'DARKDIESEL_PAGESCROLLER_VERTICAL_POS'   => $this->config['darkdiesel_pagescroller_vertical_pos']
+      'DARKDIESEL_PAGESCROLLER_VERTICAL_POS'   => $this->config['darkdiesel_pagescroller_vertical_pos'],
+
+      'DARKDIESEL_PAGESCROLLER_SCROLL_UP_SPEED' => $this->config['darkdiesel_pagescroller_scroll_up_speed'],
+      'DARKDIESEL_PAGESCROLLER_SCROLL_DOWN_SPEED' => $this->config['darkdiesel_pagescroller_scroll_down_speed'],
+
+      'DARKDIESEL_PAGESCROLLER_ANIMATION_HIDESHOW_ENABLE'   => $this->config['darkdiesel_pagescroller_animation_hideshow_enable'],
+      'DARKDIESEL_PAGESCROLLER_ANIMATION_HIDESHOW_DURATION_SHOW' => $this->config['darkdiesel_pagescroller_animation_hideshow_duration_show'],
+      'DARKDIESEL_PAGESCROLLER_ANIMATION_HIDESHOW_DURATION_HIDE' => $this->config['darkdiesel_pagescroller_animation_hideshow_duration_hide'],
+      'DARKDIESEL_PAGESCROLLER_ANIMATION_HIDESHOW_VISIBLE_PART' => $this->config['darkdiesel_pagescroller_animation_hideshow_visible_part'],
+      'DARKDIESEL_PAGESCROLLER_ANIMATION_HIDESHOW_DISTANCE_TO_PAGE' => $this->config['darkdiesel_pagescroller_animation_hideshow_distance_to_page'],
     ));
   }
 }

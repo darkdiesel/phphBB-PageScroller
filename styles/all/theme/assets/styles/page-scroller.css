@@ -99,15 +99,15 @@
     left: 20px;
 }
 
-.page-scroller.left-top.animation-hideout,
-.page-scroller.left-middle.animation-hideout,
-.page-scroller.left-bottom.animation-hideout {
+.page-scroller.left-top.animation-hideshow,
+.page-scroller.left-middle.animation-hideshow,
+.page-scroller.left-bottom.animation-hideshow {
     left: 0;
 }
 
-.page-scroller.right-top.animation-hideout,
-.page-scroller.right-middle.animation-hideout,
-.page-scroller.right-bottom.animation-hideout {
+.page-scroller.right-top.animation-hideshow,
+.page-scroller.right-middle.animation-hideshow,
+.page-scroller.right-bottom.animation-hideshow {
     right: 0;
 }
 

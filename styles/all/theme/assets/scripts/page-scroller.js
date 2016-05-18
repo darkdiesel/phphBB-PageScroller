@@ -2,13 +2,15 @@
     $.fn.pageScroller = function (options) {
         var settings = $.extend({
             'position': 'left-middle',
-            'animation-hideout': false,
-            'animation-hideout-speed-in': 200,
-            'animation-hideout-speed-out': 500,
-            'animation-hideout-block-visible': 20,
-            'animation-hideout-block-scroll-in-padding': 0,
-            'scroll-top-speed': 800,
-            'scroll-down-speed': 800
+
+            'scroll-up-speed': 800,
+            'scroll-down-speed': 800,
+
+            'animation-hideshow': false,
+            'animation-hideshow-duration-show': 200,
+            'animation-hideshow-duration-hide': 500,
+            'animation-hideshow-visible-part': 20,
+            'animation-hideshow-block-scroll-in-padding': 0
         }, options);
 
         return this.each(function () {
@@ -43,31 +45,30 @@
                     break;
             }
 
-            if (settings['animation-hideout']) {
-                $(this).addClass('animation-hideout');
+            if (settings['animation-hideshow']) {
+                $(this).addClass('animation-hideshow');
 
                 switch (settings['position']) {
                     case 'left-top':
                     case 'left-middle':
                     case 'left-bottom':
-                        $(this).animate({'left': settings['animation-hideout-block-visible'] - $(this).outerWidth()}, settings['animation-hideout-speed-out']).hover(
+                        $(this).animate({'left': settings['animation-hideshow-visible-part'] - $(this).outerWidth()}, settings['animation-hideshow-duration-hide']).hover(
                             function () {
-                                $(this).stop().animate({'left': 0 + settings['animation-hideout-block-scroll-in-padding']}, settings['animation-hideout-speed-in']);
+                                $(this).stop().animate({'left': 0 + settings['animation-hideshow-distance-to-page']}, settings['animation-hideshow-duration-show']);
                             }, function () {
-                                $(this).stop().animate({'left': settings['animation-hideout-block-visible'] - $(this).outerWidth()}, settings['animation-hideout-speed-out']);
+                                $(this).stop().animate({'left': settings['animation-hideshow-visible-part'] - $(this).outerWidth()}, settings['animation-hideshow-duration-hide']);
                             }
                         );
                         break;
-
                     case 'right-top':
                     case 'right-middle':
                     case 'right-bottom':
                     default:
-                        $(this).animate({'right': settings['animation-hideout-block-visible'] - $(this).outerWidth()}, settings['animation-hideout-speed-out']).hover(
+                        $(this).animate({'right': settings['animation-hideshow-visible-part'] - $(this).outerWidth()}, settings['animation-hideshow-duration-hide']).hover(
                             function () {
-                                $(this).stop().animate({'right': 0 + settings['animation-hideout-block-scroll-in-padding']}, settings['animation-hideout-speed-in']);
+                                $(this).stop().animate({'right': 0 + settings['animation-hideshow-distance-to-page']}, settings['animation-hideshow-duration-show']);
                             }, function () {
-                                $(this).stop().animate({'right': settings['animation-hideout-block-visible'] - $(this).outerWidth()}, settings['animation-hideout-speed-out']);
+                                $(this).stop().animate({'right': settings['animation-hideshow-visible-part'] - $(this).outerWidth()}, settings['animation-hideshow-duration-hide']);
                             }
                         );
                         break;
@@ -77,7 +78,7 @@
             $(this).on("click", ".page-scroller-up-btn", function (e) {
                 $('html,body').animate({
                     scrollTop: 0
-                }, settings['scroll-top-speed']);
+                }, settings['scroll-up-speed']);
                 e.preventDefault();
             }).on("click", ".page-scroller-down-btn", function (e) {
                 $('html,body').animate({

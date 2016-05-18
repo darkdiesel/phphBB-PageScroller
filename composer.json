@@ -3,8 +3,8 @@
 	"type": "phpbb-extension",
 	"description": "Page scroller extension add ability to scroll page to the top of page or to the bottom for phpBB 3.1",
 	"homepage": "https://github.com/darkdiesel/phphBB-PageScroller",
-	"version": "1.0.4",
-	"time": "2016-02-01",
+	"version": "1.0.5",
+	"time": "2016-05-18",
 	"license": "GPL-2.0",
 	"authors": [{
 			"name": "Igor Peshkov",
