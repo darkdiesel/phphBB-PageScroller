@@ -36,16 +36,34 @@ if (empty($lang) || !is_array($lang)) {
 
 $lang = array_merge($lang, array(
   // Settings page
-  'ACP_PAGESCROLLER_SETTINGS' => 'Page Scroller Settings',
+  'ACP_PAGESCROLLER_SETTINGS'          => 'Page Scroller Settings',
   'ACP_PAGESCROLLER_POSITION_SETTINGS' => 'Position Settings',
-  'ACP_PAGESCROLLER_SETTING_SAVED' => 'Page Scroller Settings have been saved successfully!',
+  'ACP_PAGESCROLLER_SETTING_SAVED'     => 'Page Scroller Settings have been saved successfully!',
 
-  'ACP_PAGESCROLLER_VERTICAL_POS'         => 'Vertical Position',
-  'ACP_PAGESCROLLER_VERTICAL_POS_TOP'     => 'Top',
-  'ACP_PAGESCROLLER_VERTICAL_POS_MIDDLE'  => 'Middle',
-  'ACP_PAGESCROLLER_VERTICAL_POS_BOTTOM'  => 'Bottom',
-  
+  'ACP_PAGESCROLLER_VERTICAL_POS'        => 'Vertical Position',
+  'ACP_PAGESCROLLER_VERTICAL_POS_TOP'    => 'Top',
+  'ACP_PAGESCROLLER_VERTICAL_POS_MIDDLE' => 'Middle',
+  'ACP_PAGESCROLLER_VERTICAL_POS_BOTTOM' => 'Bottom',
+
   'ACP_PAGESCROLLER_HORIZONTAL_POS'       => 'Horizontal Position',
   'ACP_PAGESCROLLER_HORIZONTAL_POS_LEFT'  => 'Left',
-  'ACP_PAGESCROLLER_HORIZONTAL_POS_RIGHT' => 'Right'
+  'ACP_PAGESCROLLER_HORIZONTAL_POS_RIGHT' => 'Right',
+
+  'ACP_PAGESCROLLER_SPEED_SETTINGS'                => 'Speed Settings',
+  'ACP_PAGESCROLLER_SPEED_SCROLL_UP'               => 'Scroll Up Speed',
+  'ACP_PAGESCROLLER_SPEED_SCROLL_UP_DESCRIPTION'   => 'Duration of Scrolling to the Top of the Page',
+  'ACP_PAGESCROLLER_SPEED_SCROLL_DOWN'             => 'Scroll Down Speed',
+  'ACP_PAGESCROLLER_SPEED_SCROLL_DOWN_DESCRIPTION' => 'Duration of Scrolling to the Bottom of the Page',
+
+  'ACP_PAGESCROLLER_ANIMATION_SETTINGS'               => 'Animation Settings',
+  'ACP_PAGESCROLLER_ANIMATION_HIDESHOW_ENABLE'        => 'Enable HideShow Animation',
+  'ACP_PAGESCROLLER_ANIMATION_HIDESHOW_DESCRIPTION'   => 'If animation enabled - page scroller will leave the page and appear when on hover.',
+  'ACP_PAGESCROLLER_ANIMATION_HIDESHOW_DURATION_SHOW' => 'Slide In Speed',
+  'ACP_PAGESCROLLER_ANIMATION_HIDESHOW_DURATION_SHOW_DESCRIPTION' => 'Duration of animation for showing page scroller',
+  'ACP_PAGESCROLLER_ANIMATION_HIDESHOW_DURATION_HIDE' => 'Slide Out Speed',
+  'ACP_PAGESCROLLER_ANIMATION_HIDESHOW_DURATION_HIDE_DESCRIPTION' => 'Duration of animation for hiding page scroller',
+  'ACP_PAGESCROLLER_ANIMATION_HIDESHOW_VISIBLE_PART' => 'Visible Part of the Page Scroller (px)',
+  'ACP_PAGESCROLLER_ANIMATION_HIDESHOW_VISIBLE_PART_DESCRIPTION' => 'Visible Part of the Scroller when Page Scroller in hide state.',
+  'ACP_PAGESCROLLER_ANIMATION_HIDESHOW_DISTANCE_TO_PAGE' => 'Distance to page (px)',
+  'ACP_PAGESCROLLER_ANIMATION_HIDESHOW_DISTANCE_TO_PAGE_DESCRIPTION' => 'Distance between the Page and Scroll when Page Scroll in Show state.',
 ));
