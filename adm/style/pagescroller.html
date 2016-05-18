@@ -7,18 +7,94 @@
     <fieldset>
         <legend>{L_ACP_PAGESCROLLER_POSITION_SETTINGS}</legend>
         <dl>
-            <dt><label for="darkdiesel_pagescroller_horizontal_pos">{L_ACP_PAGESCROLLER_HORIZONTAL_POS}</label></dt>
+            <dt>
+                <label for="darkdiesel_pagescroller_horizontal_pos">{L_ACP_PAGESCROLLER_HORIZONTAL_POS}</label>
+            </dt>
             <dd>
                 <input type="radio" class="radio" name="darkdiesel_pagescroller_horizontal_pos" value="left" <!-- IF DARKDIESEL_PAGESCROLLER_HORIZONTAL_POS == 'left' -->checked="checked"<!-- ENDIF -->/> {L_ACP_PAGESCROLLER_HORIZONTAL_POS_LEFT} &nbsp;
                 <input type="radio" class="radio" name="darkdiesel_pagescroller_horizontal_pos" value="right" <!-- IF DARKDIESEL_PAGESCROLLER_HORIZONTAL_POS == 'right' -->checked="checked"<!-- ENDIF --> /> {L_ACP_PAGESCROLLER_HORIZONTAL_POS_RIGHT}
             </dd>
         </dl>
         <dl>
-            <dt><label for="darkdiesel_pagescroller_vertical_pos">{L_ACP_PAGESCROLLER_VERTICAL_POS}</label></dt>
+            <dt>
+                <label for="darkdiesel_pagescroller_vertical_pos">{L_ACP_PAGESCROLLER_VERTICAL_POS}</label>
+            </dt>
             <dd>
                 <input type="radio" class="radio" name="darkdiesel_pagescroller_vertical_pos" value="top" <!-- IF DARKDIESEL_PAGESCROLLER_VERTICAL_POS == 'top' -->checked="checked"<!-- ENDIF -->/> {L_ACP_PAGESCROLLER_VERTICAL_POS_TOP} &nbsp;
                 <input type="radio" class="radio" name="darkdiesel_pagescroller_vertical_pos" value="middle" <!-- IF DARKDIESEL_PAGESCROLLER_VERTICAL_POS == 'middle' -->checked="checked"<!-- ENDIF -->/> {L_ACP_PAGESCROLLER_VERTICAL_POS_MIDDLE} &nbsp;
                 <input type="radio" class="radio" name="darkdiesel_pagescroller_vertical_pos" value="bottom" <!-- IF DARKDIESEL_PAGESCROLLER_VERTICAL_POS == 'bottom' -->checked="checked"<!-- ENDIF --> /> {L_ACP_PAGESCROLLER_VERTICAL_POS_BOTTOM}
+            </dd>
+        </dl>
+    </fieldset>
+
+    <fieldset>
+        <legend>{L_ACP_PAGESCROLLER_SPEED_SETTINGS}</legend>
+        <dl>
+            <dt>
+                <label for="darkdiesel_pagescroller_scroll_up_speed">{L_ACP_PAGESCROLLER_SPEED_SCROLL_UP}</label><br/>
+                <span>{L_ACP_PAGESCROLLER_SPEED_SCROLL_UP_DESCRIPTION}</span>
+            </dt>
+            <dd>
+                <input type="text" name="darkdiesel_pagescroller_scroll_up_speed" value="{DARKDIESEL_PAGESCROLLER_SCROLL_UP_SPEED}">
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <label for="darkdiesel_pagescroller_scroll_down_speed">{L_ACP_PAGESCROLLER_SPEED_SCROLL_DOWN}</label><br/>
+                <span>{L_ACP_PAGESCROLLER_SPEED_SCROLL_DOWN_DESCRIPTION}</span>
+            </dt>
+            <dd>
+                <input type="text" name="darkdiesel_pagescroller_scroll_down_speed" value="{DARKDIESEL_PAGESCROLLER_SCROLL_DOWN_SPEED}">
+            </dd>
+        </dl>
+    </fieldset>
+
+    <fieldset>
+        <legend>{L_ACP_PAGESCROLLER_ANIMATION_SETTINGS}</legend>
+        <dl>
+            <dt>
+                <label for="darkdiesel_pagescroller_animation_hideshow_enable">{L_ACP_PAGESCROLLER_ANIMATION_HIDESHOW_ENABLE}</label><br/>
+                <span>{L_ACP_PAGESCROLLER_ANIMATION_HIDESHOW_DESCRIPTION}</span>
+            </dt>
+            <dd>
+                <input type="radio" class="radio" name="darkdiesel_pagescroller_animation_hideshow_enable" value="true" <!-- IF DARKDIESEL_PAGESCROLLER_ANIMATION_HIDESHOW_ENABLE == 'true'  -->checked="checked"<!-- ENDIF -->/> {L_YES} &nbsp;
+                <input type="radio" class="radio" name="darkdiesel_pagescroller_animation_hideshow_enable" value="false" <!-- IF DARKDIESEL_PAGESCROLLER_ANIMATION_HIDESHOW_ENABLE == 'false' -->checked="checked"<!-- ENDIF --> /> {L_NO}
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <label for="darkdiesel_pagescroller_animation_hideshow_duration_show">{L_ACP_PAGESCROLLER_ANIMATION_HIDESHOW_DURATION_SHOW}</label><br/>
+                <span>{L_ACP_PAGESCROLLER_ANIMATION_HIDESHOW_DURATION_SHOW_DESCRIPTION}</span>
+            </dt>
+            <dd>
+                <input type="text" name="darkdiesel_pagescroller_animation_hideshow_duration_show" value="{DARKDIESEL_PAGESCROLLER_ANIMATION_HIDESHOW_DURATION_SHOW}">
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <label for="darkdiesel_pagescroller_animation_hideshow_duration_hide">{L_ACP_PAGESCROLLER_ANIMATION_HIDESHOW_DURATION_HIDE}</label><br/>
+                <span>{L_ACP_PAGESCROLLER_ANIMATION_HIDESHOW_DURATION_HIDE_DESCRIPTION}</span>
+            </dt>
+            <dd>
+                <input type="text" name="darkdiesel_pagescroller_animation_hideshow_duration_hide" value="{DARKDIESEL_PAGESCROLLER_ANIMATION_HIDESHOW_DURATION_HIDE}">
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <label for="darkdiesel_pagescroller_animation_hideshow_visible_part">{L_ACP_PAGESCROLLER_ANIMATION_HIDESHOW_VISIBLE_PART}</label><br/>
+                <span>{L_ACP_PAGESCROLLER_ANIMATION_HIDESHOW_VISIBLE_PART_DESCRIPTION}</span>
+            </dt>
+            <dd>
+                <input type="text" name="darkdiesel_pagescroller_animation_hideshow_visible_part" value="{DARKDIESEL_PAGESCROLLER_ANIMATION_HIDESHOW_VISIBLE_PART}">
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <label for="darkdiesel_pagescroller_animation_hideshow_distance_to_page">{L_ACP_PAGESCROLLER_ANIMATION_HIDESHOW_DISTANCE_TO_PAGE}</label><br/>
+                <span>{L_ACP_PAGESCROLLER_ANIMATION_HIDESHOW_DISTANCE_TO_PAGE_DESCRIPTION}</span>
+            </dt>
+            <dd>
+                <input type="text" name="darkdiesel_pagescroller_animation_hideshow_distance_to_page" value="{DARKDIESEL_PAGESCROLLER_ANIMATION_HIDESHOW_DISTANCE_TO_PAGE}">
             </dd>
         </dl>
     </fieldset>

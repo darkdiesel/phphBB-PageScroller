@@ -35,6 +35,13 @@ class m1_initial_module extends \phpbb\db\migration\migration {
     return array(
       array('config.add', array('darkdiesel_pagescroller_horizontal_pos', 'right')),
       array('config.add', array('darkdiesel_pagescroller_vertical_pos', 'bottom')),
+      array('config.add', array('darkdiesel_pagescroller_scroll_up_speed', '800')),
+      array('config.add', array('darkdiesel_pagescroller_scroll_down_speed', '800')),
+      array('config.add', array('darkdiesel_pagescroller_animation_hideshow_enable', 'false')),
+      array('config.add', array('darkdiesel_pagescroller_animation_hideshow_duration_show', '200')),
+      array('config.add', array('darkdiesel_pagescroller_animation_hideshow_duration_hide', '500')),
+      array('config.add', array('darkdiesel_pagescroller_animation_hideshow_visible_part', '20')),
+      array('config.add', array('darkdiesel_pagescroller_animation_hideshow_distance_to_page', '0')),
       // Remove old ACP_PAGESCROLLER module if it exists
 //      array('if', array(
 //        array('module.exists', array('acp', false, 'ACP_PAGESCROLLER')),
