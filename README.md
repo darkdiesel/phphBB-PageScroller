@@ -16,7 +16,10 @@ Page scroller extension add ability to scroll page to the top of page or to the 
 ## Features
 
  - Page scrolling in both vertical directions
+ - Manage scrolling speed
  - Manage position of page scroller via ACP
+ - Add hide/show animation
+
 
 ## License
 
