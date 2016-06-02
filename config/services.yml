@@ -3,10 +3,9 @@ services:
         class: darkdiesel\pagescroller\event\main_listener
         arguments:
             - @config
-            - @controller.helper
+            - @ext.manager
             - @template
-            - @user
-            - %core.php_ext%
+            - %core.root_path%
         tags:
             - { name: event.listener }
 

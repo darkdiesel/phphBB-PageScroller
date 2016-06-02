@@ -27,6 +27,41 @@
         </dl>
     </fieldset>
 
+    <fieldset id="page-scroller-svg">
+        <legend>{L_ACP_PAGESCROLLER_STYLE_SETTINGS}</legend>
+        <dl>
+            <dt>
+                <label for="darkdiesel_pagescroller_style_type">{L_ACP_PAGESCROLLER_STYLE_TYPE}</label><br/>
+                <span>{L_ACP_PAGESCROLLER_STYLE_TYPE_DESCRIPTION}</span>
+            </dt>
+            <dd>
+                <input type="radio" class="radio" name="darkdiesel_pagescroller_style_type" value="1" <!-- IF DARKDIESEL_PAGESCROLLER_STYLE_TYPE == '1' -->checked="checked"<!-- ENDIF -->/> 1 &nbsp;
+                <input type="radio" class="radio" name="darkdiesel_pagescroller_style_type" value="2" <!-- IF DARKDIESEL_PAGESCROLLER_STYLE_TYPE == '2' -->checked="checked"<!-- ENDIF -->/> 2 &nbsp;
+                <input type="radio" class="radio" name="darkdiesel_pagescroller_style_type" value="3" <!-- IF DARKDIESEL_PAGESCROLLER_STYLE_TYPE == '3' -->checked="checked"<!-- ENDIF -->/> 3 &nbsp;
+                <input type="radio" class="radio" name="darkdiesel_pagescroller_style_type" value="4" <!-- IF DARKDIESEL_PAGESCROLLER_STYLE_TYPE == '4' -->checked="checked"<!-- ENDIF --> /> 4
+            </dd>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <label for="darkdiesel_pagescroller_style_bgcolor">{L_ACP_PAGESCROLLER_STYLE_BGCOLOR}</label><br/>
+                <span>{L_ACP_PAGESCROLLER_STYLE_BGCOLOR_DESCRIPTION}</span>
+            </dt>
+            <dd>
+                <input type="text" class="color" name="darkdiesel_pagescroller_style_bgcolor" id="darkdiesel_pagescroller_style_bgcolor_btn" value="{DARKDIESEL_PAGESCROLLER_STYLE_BGCOLOR}" size="24" maxlength="24">
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <label for="darkdiesel_pagescroller_style_chevroncolor">{L_ACP_PAGESCROLLER_STYLE_CHEVRONCOLOR}</label><br/>
+                <span>{L_ACP_PAGESCROLLER_STYLE_CHEVRONCOLOR_DESCRIPTION}</span>
+            </dt>
+            <dd>
+                <input type="text" class="color no-alpha" name="darkdiesel_pagescroller_style_chevroncolor" id="darkdiesel_pagescroller_style_chevroncolor_btn" value="{DARKDIESEL_PAGESCROLLER_STYLE_CHEVRONCOLOR}" size="18" maxlength="18">
+            </dd>
+        </dl>
+    </fieldset>
+
     <fieldset>
         <legend>{L_ACP_PAGESCROLLER_SPEED_SETTINGS}</legend>
         <dl>
