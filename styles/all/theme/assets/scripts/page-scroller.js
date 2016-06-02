@@ -12,6 +12,8 @@
             'scroll-up-speed': 800,
             'scroll-down-speed': 800,
 
+            'hide-buttons': false,
+
             'animation-hideshow': false,
             'animation-hideshow-duration-show': 200,
             'animation-hideshow-duration-hide': 500,
@@ -20,9 +22,12 @@
         }, options);
 
         return this.each(function () {
-            $(this).css({
+
+            var pageScroller = $(this);
+
+            pageScroller.css({
                 'position': 'fixed',
-                'height': $(this).outerHeight()
+                //'height': $(this).outerHeight()
             });
 
             switch (settings['position']) {
@@ -82,17 +87,41 @@
                 }
             }
 
-            $(this).on("click", ".page-scroller-up-btn", function (e) {
+            pageScroller.on("click", ".page-scroller-up-btn", function (e) {
                 $('html,body').animate({
                     scrollTop: 0
                 }, settings['scroll-up-speed']);
                 e.preventDefault();
             }).on("click", ".page-scroller-down-btn", function (e) {
                 $('html,body').animate({
-                    scrollTop: $(document).outerHeight()
+                    scrollTop: $(document).outerHeight() - $(window).outerHeight()
                 }, settings['scroll-down-speed']);
                 e.preventDefault();
             });
+
+            if (settings['hide-buttons']) {
+                checkBtns();
+
+                $(window).scroll(function(){
+                    checkBtns();
+                });
+
+                function checkBtns(){
+                    var pos = $(window).scrollTop();
+
+                    if (pos == 0){
+                        pageScroller.find('.page-scroller-up-btn').slideUp();
+                    } else {
+                        pageScroller.find('.page-scroller-up-btn').slideDown();
+                    }
+
+                    if (pos >= $(document).outerHeight() - $(window).outerHeight()) {
+                        pageScroller.find('.page-scroller-down-btn').slideUp();
+                    } else {
+                        pageScroller.find('.page-scroller-down-btn').slideDown();
+                    }
+                }
+            }
         });
     };
 })(jQuery);
