@@ -35,6 +35,11 @@ class m1_initial_module extends \phpbb\db\migration\migration {
     return array(
       array('config.add', array('darkdiesel_pagescroller_horizontal_pos', 'right')),
       array('config.add', array('darkdiesel_pagescroller_vertical_pos', 'bottom')),
+
+      array('config.add', array('darkdiesel_pagescroller_style_type', '1')),
+      array('config.add', array('darkdiesel_pagescroller_style_bgcolor', '#0076b1')),
+      array('config.add', array('darkdiesel_pagescroller_style_chevroncolor', '#FFFFFF')),
+
       array('config.add', array('darkdiesel_pagescroller_scroll_up_speed', '800')),
       array('config.add', array('darkdiesel_pagescroller_scroll_down_speed', '800')),
       array('config.add', array('darkdiesel_pagescroller_animation_hideshow_enable', 'false')),

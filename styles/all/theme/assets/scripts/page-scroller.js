@@ -1,3 +1,9 @@
+/*!
+ * Page Scroller 1.0.6
+ * Copyright (c) Igor Peshkov (dark_diesel) <https://plus.google.com/+IgorPeshkov
+ * Licensed http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+ */
+
 (function ($) {
     $.fn.pageScroller = function (options) {
         var settings = $.extend({
@@ -15,7 +21,8 @@
 
         return this.each(function () {
             $(this).css({
-                'position': 'fixed'
+                'position': 'fixed',
+                'height': $(this).outerHeight()
             });
 
             switch (settings['position']) {

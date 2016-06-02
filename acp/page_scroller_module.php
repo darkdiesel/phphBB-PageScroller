@@ -77,6 +77,10 @@ class page_scroller_module {
       $this->config->set('darkdiesel_pagescroller_horizontal_pos', $this->request->variable('darkdiesel_pagescroller_horizontal_pos', 'right'));
       $this->config->set('darkdiesel_pagescroller_vertical_pos', $this->request->variable('darkdiesel_pagescroller_vertical_pos', 'bottom'));
 
+      $this->config->set('darkdiesel_pagescroller_style_type', $this->request->variable('darkdiesel_pagescroller_style_type', '1'));
+      $this->config->set('darkdiesel_pagescroller_style_bgcolor', $this->request->variable('darkdiesel_pagescroller_style_bgcolor', '#0076b1'));
+      $this->config->set('darkdiesel_pagescroller_style_chevroncolor', $this->request->variable('darkdiesel_pagescroller_style_chevroncolor', '#FFFFFF'));
+
       $this->config->set('darkdiesel_pagescroller_scroll_up_speed', $this->request->variable('darkdiesel_pagescroller_scroll_up_speed', '800'));
       $this->config->set('darkdiesel_pagescroller_scroll_down_speed', $this->request->variable('darkdiesel_pagescroller_scroll_down_speed', '800'));
 
@@ -94,6 +98,10 @@ class page_scroller_module {
       'DARKDIESEL_PAGESCROLLER_HORIZONTAL_POS' => $this->config['darkdiesel_pagescroller_horizontal_pos'],
       'DARKDIESEL_PAGESCROLLER_VERTICAL_POS' => $this->config['darkdiesel_pagescroller_vertical_pos'],
 
+      'DARKDIESEL_PAGESCROLLER_STYLE_TYPE' => $this->config['darkdiesel_pagescroller_style_type'],
+      'DARKDIESEL_PAGESCROLLER_STYLE_BGCOLOR' => $this->config['darkdiesel_pagescroller_style_bgcolor'],
+      'DARKDIESEL_PAGESCROLLER_STYLE_CHEVRONCOLOR' => $this->config['darkdiesel_pagescroller_style_chevroncolor'],
+
       'DARKDIESEL_PAGESCROLLER_SCROLL_UP_SPEED' => $this->config['darkdiesel_pagescroller_scroll_up_speed'],
       'DARKDIESEL_PAGESCROLLER_SCROLL_DOWN_SPEED' => $this->config['darkdiesel_pagescroller_scroll_down_speed'],
 
@@ -102,6 +110,8 @@ class page_scroller_module {
       'DARKDIESEL_PAGESCROLLER_ANIMATION_HIDESHOW_DURATION_HIDE' => $this->config['darkdiesel_pagescroller_animation_hideshow_duration_hide'],
       'DARKDIESEL_PAGESCROLLER_ANIMATION_HIDESHOW_VISIBLE_PART' => $this->config['darkdiesel_pagescroller_animation_hideshow_visible_part'],
       'DARKDIESEL_PAGESCROLLER_ANIMATION_HIDESHOW_DISTANCE_TO_PAGE' => $this->config['darkdiesel_pagescroller_animation_hideshow_distance_to_page'],
+
+      'S_DARKDIESEL_PAGESCROLLER'	=> true,
     ));
   }
 }

@@ -12,13 +12,11 @@
 /**
  * DO NOT CHANGE
  */
-if (!defined('IN_PHPBB'))
-{
+if (!defined('IN_PHPBB')) {
   exit;
 }
 
-if (empty($lang) || !is_array($lang))
-{
+if (empty($lang) || !is_array($lang)) {
   $lang = array();
 }
 
@@ -43,8 +41,11 @@ $lang = array_merge($lang, array(
   'ACP_PAGESCROLLER'          => 'Board Page Scroller',
   'ACP_PAGESCROLLER_SETTINGS' => 'Settings',
 
-  'PAGESCROLLER'				=> 'Page Scroller',
-  'PAGESCROLLER_TITLE'			=> 'View the Page Scroller',
-  'PAGESCROLLER_VIEWONLINE'		=> 'Viewing Page Scroller',
-  'PAGESCROLLER_NOTIFICATION'	=> 'The Page Scroller have been updated. Click here to review them.',
+  'PAGESCROLLER'              => 'Page Scroller',
+  'PAGESCROLLER_TITLE'        => 'View the Page Scroller',
+  'PAGESCROLLER_VIEWONLINE'   => 'Viewing Page Scroller',
+  'PAGESCROLLER_NOTIFICATION' => 'The Page Scroller have been updated. Click here to review them.',
+
+  'PAGESCROLLER_UP'   => 'Up',
+  'PAGESCROLLER_DOWN' => 'Down',
 ));
