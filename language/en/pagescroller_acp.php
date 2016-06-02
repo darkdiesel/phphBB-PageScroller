@@ -50,6 +50,8 @@ $lang = array_merge($lang, array(
   'ACP_PAGESCROLLER_HORIZONTAL_POS_RIGHT' => 'Right',
 
   'ACP_PAGESCROLLER_STYLE_SETTINGS'                 => 'Style Settings',
+  'ACP_PAGESCROLLER_STYLE_HIDE_BUTTONS'             => 'Hide Buttons',
+  'ACP_PAGESCROLLER_STYLE_HIDE_BUTTONS_DESCRIPTION' => 'Hide buttons that are not needed. At the top hide top button, at the bottom - bottom button',
   'ACP_PAGESCROLLER_STYLE_BGCOLOR'                  => 'Page Scroller Background Color',
   'ACP_PAGESCROLLER_STYLE_BGCOLOR_DESCRIPTION'      => 'Background color for Page Scroller\'s Buttons',
   'ACP_PAGESCROLLER_STYLE_CHEVRONCOLOR'             => 'Page Scroller Chevron Color',

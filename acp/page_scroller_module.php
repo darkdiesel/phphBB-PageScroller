@@ -78,6 +78,7 @@ class page_scroller_module {
       $this->config->set('darkdiesel_pagescroller_vertical_pos', $this->request->variable('darkdiesel_pagescroller_vertical_pos', 'bottom'));
 
       $this->config->set('darkdiesel_pagescroller_style_type', $this->request->variable('darkdiesel_pagescroller_style_type', '1'));
+      $this->config->set('darkdiesel_pagescroller_style_hide_btns', $this->request->variable('darkdiesel_pagescroller_style_hide_btns', 'false'));
       $this->config->set('darkdiesel_pagescroller_style_bgcolor', $this->request->variable('darkdiesel_pagescroller_style_bgcolor', '#0076b1'));
       $this->config->set('darkdiesel_pagescroller_style_chevroncolor', $this->request->variable('darkdiesel_pagescroller_style_chevroncolor', '#FFFFFF'));
 
@@ -99,6 +100,7 @@ class page_scroller_module {
       'DARKDIESEL_PAGESCROLLER_VERTICAL_POS' => $this->config['darkdiesel_pagescroller_vertical_pos'],
 
       'DARKDIESEL_PAGESCROLLER_STYLE_TYPE' => $this->config['darkdiesel_pagescroller_style_type'],
+      'DARKDIESEL_PAGESCROLLER_STYLE_HIDE_BTNS' => $this->config['darkdiesel_pagescroller_style_hide_btns'],
       'DARKDIESEL_PAGESCROLLER_STYLE_BGCOLOR' => $this->config['darkdiesel_pagescroller_style_bgcolor'],
       'DARKDIESEL_PAGESCROLLER_STYLE_CHEVRONCOLOR' => $this->config['darkdiesel_pagescroller_style_chevroncolor'],
 

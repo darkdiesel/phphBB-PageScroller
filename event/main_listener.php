@@ -107,6 +107,7 @@ class main_listener implements EventSubscriberInterface {
       'DARKDIESEL_PAGESCROLLER_IMAGE_CHEVRON_UP'   => $chevron_up_img,
       'DARKDIESEL_PAGESCROLLER_IMAGE_CHEVRON_DOWN' => $chevron_down_img,
 
+      'DARKDIESEL_PAGESCROLLER_STYLE_HIDE_BTNS' => $this->config['darkdiesel_pagescroller_style_hide_btns'],
       'DARKDIESEL_PAGESCROLLER_STYLE_BGCOLOR'      => $this->config['darkdiesel_pagescroller_style_bgcolor'],
       'DARKDIESEL_PAGESCROLLER_STYLE_CHEVRONCOLOR' => $this->config['darkdiesel_pagescroller_style_chevroncolor'],
 
