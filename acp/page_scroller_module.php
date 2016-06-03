@@ -10,6 +10,8 @@
 
 namespace darkdiesel\pagescroller\acp;
 
+//use darkdiesel\pagescroller\event\main_listener;
+
 class page_scroller_module {
   /** @var \phpbb\cache\driver\driver_interface */
   protected $cache;
@@ -44,6 +46,9 @@ class page_scroller_module {
   /** @var string */
   public $u_action;
 
+  /** @var  */
+  protected $phpbb_container;
+
   function main($id, $mode) {
     global $cache, $config, $db, $phpbb_log, $request, $template, $user, $phpbb_root_path, $phpEx, $phpbb_container;
 
@@ -57,6 +62,7 @@ class page_scroller_module {
     $this->user = $user;
     $this->phpbb_root_path = $phpbb_root_path;
     $this->php_ext = $phpEx;
+    $this->phpbb_container = $phpbb_container;
 
     // Add the board rules ACP lang file
     $this->user->add_lang_ext('darkdiesel/pagescroller', 'pagescroller_acp');
@@ -65,6 +71,10 @@ class page_scroller_module {
     $this->page_title = $user->lang('ACP_PAGESCROLLER_SETTINGS');
 
     add_form_key('darkdiesel/pagescroller');
+
+    /** @var \darkdiesel\pagescroller\event\main_listener $listener */
+    $listener = $this->phpbb_container->get('darkdiesel.pagescroller.listener');
+    $scroller_styles = $listener->get_images('.svg', 'chevron-up-style');
 
     if ($this->request->is_set_post('submit'))
     {
@@ -115,5 +125,16 @@ class page_scroller_module {
 
       'S_DARKDIESEL_PAGESCROLLER'	=> true,
     ));
+
+    for ($i = 0; $i < count($scroller_styles); $i++ ){
+      $img = 'pagescroller/styles/all/theme/assets/images/' . 'chevron-up-style' . ( $i+1 ). '.svg';
+
+      $img_url =  (isset($scroller_styles['ext/' . $img])) ? '/ext/darkdiesel/' . $img : '';
+
+      $this->template->assign_block_vars('style_images', array(
+        'STYLE' => $i+1,
+        'IMAGE' => $img_url
+      ));
+    }
   }
 }
