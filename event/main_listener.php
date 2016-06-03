@@ -125,14 +125,26 @@ class main_listener implements EventSubscriberInterface {
   /**
    * Get image paths/names from ABBC3's icons folder
    *
+   * @param string $extension_suffix
+   * @param string $extension_prefix
+   *
    * @return array File data from ./ext/vse/abbc3/images/icons
-   * @access protected
+   * @access public
    */
-  protected function get_images($suffix) {
+  public function get_images($extension_suffix = null, $extension_prefix = null) {
     $finder = $this->extension_manager->get_finder();
 
+    if ($extension_suffix){
+      $finder = $finder
+        ->extension_suffix($extension_suffix);
+    }
+
+    if ($extension_prefix){
+      $finder = $finder
+        ->extension_prefix($extension_prefix);
+    }
+
     return $finder
-      ->extension_suffix($suffix)
       ->extension_directory('/styles/all/theme/assets/images/')
       ->find_from_extension('pagescroller', $this->root_path . ext::DARKDIESEL_PAGESCROLLER_ROOT_PATH);
   }

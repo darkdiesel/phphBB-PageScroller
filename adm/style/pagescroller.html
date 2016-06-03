@@ -47,11 +47,10 @@
                 <span>{L_ACP_PAGESCROLLER_STYLE_TYPE_DESCRIPTION}</span>
             </dt>
             <dd>
-                <input type="radio" class="radio" name="darkdiesel_pagescroller_style_type" value="1" <!-- IF DARKDIESEL_PAGESCROLLER_STYLE_TYPE == '1' -->checked="checked"<!-- ENDIF -->/> 1 &nbsp;
-                <input type="radio" class="radio" name="darkdiesel_pagescroller_style_type" value="2" <!-- IF DARKDIESEL_PAGESCROLLER_STYLE_TYPE == '2' -->checked="checked"<!-- ENDIF -->/> 2 &nbsp;
-                <input type="radio" class="radio" name="darkdiesel_pagescroller_style_type" value="3" <!-- IF DARKDIESEL_PAGESCROLLER_STYLE_TYPE == '3' -->checked="checked"<!-- ENDIF -->/> 3 &nbsp;
-                <input type="radio" class="radio" name="darkdiesel_pagescroller_style_type" value="4" <!-- IF DARKDIESEL_PAGESCROLLER_STYLE_TYPE == '4' -->checked="checked"<!-- ENDIF --> /> 4
-            </dd>
+                <!-- BEGIN style_images -->
+                <input type="radio" class="radio" name="darkdiesel_pagescroller_style_type" value="{style_images.STYLE}" <!-- IF DARKDIESEL_PAGESCROLLER_STYLE_TYPE == style_images.STYLE -->checked="checked"<!-- ENDIF -->/>
+                <img class="acp-pagescroller-style-img" src="{style_images.IMAGE}" alt="{style_images.STYLE}">&nbsp;
+                <!-- END style_images -->
             </dd>
         </dl>
         <dl>
