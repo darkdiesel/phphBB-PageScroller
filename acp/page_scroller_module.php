@@ -133,7 +133,7 @@ class page_scroller_module {
 
       $this->template->assign_block_vars('style_images', array(
         'STYLE' => $i+1,
-        'IMAGE' => $img_url
+        'IMAGE' => generate_board_url() . $img_url
       ));
     }
   }
