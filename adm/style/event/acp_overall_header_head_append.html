@@ -1,4 +1,4 @@
-<!-- IF S_DARKDIESEL_PAGESCROLLER -->
-    <!-- INCLUDECSS @darkdiesel_pagescroller/theme/assets/styles/mod.css -->
-    <!-- INCLUDECSS @darkdiesel_pagescroller/theme/assets/styles/style.css -->
-<!-- ENDIF -->
+{% if S_DARKDIESEL_PAGESCROLLER %}
+    {% INCLUDECSS '@darkdiesel_pagescroller/assets/styles/mod.css' %}
+    {% INCLUDECSS '@darkdiesel_pagescroller/assets/styles/style.css' %}
+{% endif %}
